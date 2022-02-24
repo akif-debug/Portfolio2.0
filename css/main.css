@@ -81,6 +81,9 @@ section {
     section {
       margin-top: 5rem; } }
 
+.row {
+  margin-top: 3rem !important; }
+
 * {
   margin: 0;
   padding: 0;
@@ -210,13 +213,14 @@ nav {
           color: transparent !important; } }
     nav .left a:not(:last-child) {
       margin-right: 2rem; }
-  nav .left button {
+  nav .left .btn {
+    color: #fff !important;
     padding: 8px 18px !important;
     transition: all .3s ease-in !important; }
     @media (max-width: 1049px) {
-      nav .left button {
+      nav .left .btn {
         display: none; } }
-    nav .left button:hover {
+    nav .left .btn:hover {
       background: #717ff5 !important; }
   nav #check {
     display: none; }
@@ -241,43 +245,47 @@ header {
   background-image: url(../img/hero-bg.png);
   background-attachment: fixed;
   background-repeat: no-repeat; }
-  header .container-fluid {
-    height: 100%;
-    display: flex;
-    align-items: center; }
-    @media (max-width: 500px) {
-      header .container-fluid .row .col-lg-6:not(:last-child) {
-        margin-bottom: 6rem !important; } }
-    @media (max-width: 1049px) {
-      header .container-fluid .row .col-lg-6 {
-        text-align: center; }
+  @media (max-width: 770px) {
+    header {
+      padding: 5rem 0 2rem 0; } }
+  header .container-fluid .row {
+    margin-top: 0 !important; }
+    header .container-fluid .row .col-lg-6 {
+      margin-top: 15%; }
+      @media (max-width: 500px) {
         header .container-fluid .row .col-lg-6:not(:last-child) {
-          margin-bottom: 6.5rem; } }
-    header .container-fluid .row .col-lg-6 h1 {
-      color: #012970 !important;
-      font-size: 48px;
-      line-height: 1;
-      margin-top: 3rem;
-      padding-bottom: 1rem; }
-      @media (max-width: 500px) {
-        header .container-fluid .row .col-lg-6 h1 {
-          font-size: 24px;
-          margin-top: 0; } }
-    header .container-fluid .row .col-lg-6 h2 {
-      font-size: 1.6rem;
-      font-weight: 500;
-      padding-bottom: 2.5rem; }
-      @media (max-width: 500px) {
-        header .container-fluid .row .col-lg-6 h2 {
-          font-size: 1rem;
-          padding-bottom: 1.3rem; } }
+          margin-bottom: 6rem !important; } }
+      @media (max-width: 1049px) {
+        header .container-fluid .row .col-lg-6 {
+          margin-top: 4.5%;
+          text-align: center; }
+          header .container-fluid .row .col-lg-6:not(:last-child) {
+            margin-bottom: 4.5rem; } }
+      header .container-fluid .row .col-lg-6 h1 {
+        color: #012970 !important;
+        font-size: 48px;
+        line-height: 1;
+        margin-top: 3rem;
+        padding-bottom: 1rem; }
+        @media (max-width: 500px) {
+          header .container-fluid .row .col-lg-6 h1 {
+            font-size: 24px;
+            margin-top: 0; } }
+      header .container-fluid .row .col-lg-6 h2 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding-bottom: 2.5rem; }
+        @media (max-width: 500px) {
+          header .container-fluid .row .col-lg-6 h2 {
+            font-size: 1rem;
+            padding-bottom: 1.3rem; } }
     header .container-fluid .row .col-lg-6 img {
-      margin-top: -4.2rem;
       animation: smooth-jumping 3s infinite;
       width: 100%;
       min-width: 100%; }
       @media (max-width: 500px) {
         header .container-fluid .row .col-lg-6 img {
+          margin-top: -4.2rem;
           animation: smooth-jumping 3.35s infinite; } }
 
 @keyframes smooth-jumping {
