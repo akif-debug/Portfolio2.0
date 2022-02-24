@@ -1,0 +1,40 @@
+// about
+// /////
+.about {
+	.container-fluid {
+		.row {
+			align-items: center;
+			.col-lg-6 {
+				@include respond(phone) {
+					margin-bottom: 1rem;
+				}
+				.content {
+					background: #f6f9ff;
+					padding: 40px;
+					@include respond(phone) {
+						padding: 10px 10px 23px 10px;
+					}
+					h6 {
+						text-align: left;
+					}
+					h3 {
+						@include respond(phone) {
+							font-size: 18px;
+						}
+					}
+					p {
+						@include respond(phone) {
+							font-size: 14px;
+							line-height: 20px;
+							margin: 8px 0 20px 0;
+						}
+					}
+					a:hover {
+						color: $white-color;
+						background: $second-primary;
+					}
+				}
+			}
+		}
+	}
+}

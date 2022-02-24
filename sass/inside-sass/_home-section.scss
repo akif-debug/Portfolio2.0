@@ -74,6 +74,7 @@ nav {
 				display: none;
 			}
 			&:hover {
+				color: $white-color;
 				background: $second-primary;
 			}
 		}
@@ -101,25 +102,32 @@ nav {
 }
 header {
 	width: 100%;
-	height: 100vh;
+	// height: 100vh;
 	background-image: url(../img/hero-bg.png);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	@include respond(tablet-por) {
-		padding: 5rem 0 2rem 0;
+	padding: 10rem 0 10rem 0;
+	@include respond(tablet-land) {
+		padding: 5rem 0 5rem 0;
 	}
 	.container-fluid {
 		.row {
 			margin-top: 0 !important;
 			.col-lg-6 {
-				margin-top: 15%;
+				&:not(:last-child) {
+					margin-top: 3.5rem;
+				}
 				@include respond(phone) {
 					&:not(:last-child) {
+						margin-top: 0;
 						margin-bottom: 6rem !important;
 					}
 				}
+				@include respond(tablet-por) {
+					margin-top: 0 !important;
+			 	}
 				@include respond(tablet-land) {
-					margin-top: 4.5%;
+					margin-top: 0rem !important;
 					text-align: center;
 					&:not(:last-child) {
 						margin-bottom: 4.5rem;
@@ -158,9 +166,13 @@ header {
 					width: 100%;
 					min-width: 100%;
 					@include respond(phone) {
-						margin-top: -4.2rem;
+						margin-top: -3rem;
 						animation: smooth-jumping 3.35s infinite;
 					}
+				}
+				a:hover {
+					color: $white-color;
+					background: $second-primary;
 				}
 			}
 		}

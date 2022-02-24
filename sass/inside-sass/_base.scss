@@ -10,15 +10,18 @@ body {
 	font-weight: 700;
 	color: $black-color;
 }
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
 	width: .5rem;
 }
-html::-webkit-scrollbar-track {
-	background: #f2f2f2;
+*::-webkit-scrollbar-track {
+	background: #F2F5FC;
 }
-html::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
 	background: $primary-color;
 	// border-radius: 50px;
+}
+html {
+	scroll-behavior: smooth !important;
 }
 // font-families
 @font-face {
