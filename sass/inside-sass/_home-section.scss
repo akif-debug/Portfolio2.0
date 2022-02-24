@@ -167,7 +167,7 @@ header {
 					min-width: 100%;
 					@include respond(phone) {
 						margin-top: -3rem;
-						animation: smooth-jumping 3.35s infinite;
+						animation: smooth-jumping 3s infinite;
 					}
 				}
 				a:hover {
